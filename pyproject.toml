@@ -1,11 +1,14 @@
 [project]
 name = "mess-generator"
 version = "0.1.0"
-description = "Add your description here"
+description = "Monthly Mess Management System"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.8"  # Changed from 3.13 for wider compatibility
 dependencies = [
-    "streamlit>=1.43.2",
+    "streamlit>=1.25.0",
     "pandas>=2.0.0",
-    "reportlab==3.6.12",  # Add this line
+    "reportlab==3.6.12",  # Explicitly added
 ]
+
+[tool.streamlit]
+requirementsFile = "requirements.txt"  # Force use of requirements.txt
